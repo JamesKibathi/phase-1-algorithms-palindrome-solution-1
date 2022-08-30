@@ -1,9 +1,33 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  // converting the string to array
+  const wordToArray=word.split('');
+  //Reversing the array values 
+  const reverseWordToArray=wordToArray.reverse();
+  //Converting the reversed array back to a string
+  const reversedString=reverseWordToArray.join('');
+  //-Check if the reversed string is equal to the input string
+  if(word==reversedString){
+
+    return true;
+    //console.log("This is a palindrome")
+  }
+  else{
+    return false;
+    //console.log("Not a palindrome")
+  }
 }
 
 /* 
   Add your pseudocode here
+- Given a string, convert it to array
+- Reverse the array values 
+- Convert the reversed array back to a string
+-Check if the reversed string is equal to the input string
+-If equal return false 
+-else return true
+-perform checks if work can be read from the back
+
 */
 
 /*
